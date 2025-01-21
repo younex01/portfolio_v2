@@ -23,7 +23,7 @@ export type TabItem = Tab | Separator;
 
 interface ExpandableTabsProps {
   className?: string;
-  activeColor?: string;
+  activeColor: string;
   onChange?: (index: number | null) => void;
 }
 
@@ -105,8 +105,8 @@ export function ExpandableTabs({
             className={cn(
               "relative flex items-center rounded-xl px-4 py-2 text-sm font-medium transition-colors duration-300",
               selected === index
-                ? cn("bg-muted", activeColor)
-                : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                ? cn("bg-muted text-foreground", activeColor) 
+                : "text-muted-foreground hover:bg-black hover:text-foreground"
             )}
           >
             <Icon size={20} />

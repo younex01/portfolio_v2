@@ -29,8 +29,8 @@ export const LinkPreview = ({
   children,
   url,
   className,
-  width = 200,
-  height = 125,
+  width = 32,
+  height = 32,
   quality = 50,
   layout = "fixed",
   isStatic = false,
@@ -85,6 +85,7 @@ export const LinkPreview = ({
             quality={quality}
             layout={layout}
             priority={true}
+            className="object-cover w-full h-full"
             alt="hidden image"
           />
         </div>
@@ -99,14 +100,14 @@ export const LinkPreview = ({
       >
         <HoverCardPrimitive.Trigger
           onMouseMove={handleMouseMove}
-          className={cn("text-black dark:text-white", className)}
+          className={cn("text-black dark:text-white object-cover", className)}
           href={url}
         >
           {children}
         </HoverCardPrimitive.Trigger>
 
         <HoverCardPrimitive.Content
-          className="[transform-origin:var(--radix-hover-card-content-transform-origin)]"
+          className="[transform-origin:var(--radix-hover-card-content-transform-origin)] "
           side="top"
           align="center"
           sideOffset={10}
@@ -126,14 +127,14 @@ export const LinkPreview = ({
                   },
                 }}
                 exit={{ opacity: 0, y: 20, scale: 0.6 }}
-                className="shadow-xl rounded-xl"
+                className="shadow-xl rounded-xl "
                 style={{
                   x: translateX,
                 }}
               >
                 <Link
                   href={url}
-                  className="block p-1 bg-white border-2 border-transparent shadow rounded-xl hover:border-neutral-200 dark:hover:border-neutral-800"
+                  className="block object-cover bg-white shadow rounded-xl"
                   style={{ fontSize: 0 }}
                 >
                   <Image
@@ -143,7 +144,7 @@ export const LinkPreview = ({
                     quality={quality}
                     layout={layout}
                     priority={true}
-                    className="rounded-lg"
+                    className="rounded-lg object-cover w-full h-full"
                     alt="preview image"
                   />
                 </Link>

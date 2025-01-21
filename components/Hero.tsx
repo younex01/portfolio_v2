@@ -15,7 +15,7 @@ const Hero = () => {
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <div>
-          <h1 className="text-xl font-semibold">John Doe</h1>
+          <h1 className="text-xl font-semibold">Youness Elousse</h1>
           <p className="text-sm text-neutral-400">Frontend developer</p>
         </div>
       </div>

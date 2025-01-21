@@ -9,7 +9,7 @@ const geistSans = Geist({
 });
 
 const OffBit = localFont({
-  src: [{ path: "../public/font/OffBitTrial-Dot.ttf", weight: "700" }],
+  src: [{ path: "../public/font/OffBit-DotBold.ttf", weight: "700" }],
   variable: "--font-offbit",
 });
 

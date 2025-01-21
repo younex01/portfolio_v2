@@ -7,36 +7,47 @@ const About = () => {
       <p className="text-neutral-400">
         Frontend developer based in{" "}
         <LinkPreview
-          url="https://ui.aceternity.com"
-          className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
-        >
+          url="/morocco.jpg"
+          imageSrc="/morocco.jpg"
+          isStatic
+          className="font-bold bg-clip-text text-transparent text-white"
+          >
           Morocco
         </LinkPreview>
         , specializing in interactive web apps with{" "}
         <LinkPreview
-          url="https://ui.aceternity.com"
-          className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
-        >
+          url="/react-1.png"
+          imageSrc="/react-1.png"
+          isStatic
+          className="font-bold bg-clip-text text-transparent text-white"
+          >
           React.js
         </LinkPreview>
         ,
         <LinkPreview
-          url="https://ui.aceternity.com"
-          className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
-        >
+          imageSrc="/next-js.png"
+          isStatic
+          url="/next-js.png"
+          className="font-bold bg-clip-text text-transparent text-white"
+          >
           Next.js
         </LinkPreview>
         ,{" "}
         <LinkPreview
-          url="https://ui.aceternity.com"
-          className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
-        >
+          imageSrc="/tailwind-css-2.png"
+          isStatic
+          url="/tailwind-css-2.png"
+          className="font-bold bg-clip-text text-transparent text-white"
+          >
           TypeScript
         </LinkPreview>{" "}
         and{" "}
         <LinkPreview
-          url="https://ui.aceternity.com"
-          className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
+          url="/tailwind-css-2.png"
+          imageSrc="/tailwind-css-2.png"
+          isStatic
+          height={32}
+          className="font-bold bg-clip-text text-transparent text-white"
         >
           TailwindCSS
         </LinkPreview>
